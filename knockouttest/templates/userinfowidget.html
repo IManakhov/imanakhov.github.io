@@ -1,0 +1,14 @@
+ <div class="row" data-bind="with: userData">
+        <div class="col-lg-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><b>Login: <label data-bind="text: login"/></b></div>
+                <div class="panel-body">
+                    <p>Repos count: <label data-bind="text: public_repos"/></p>
+                    <p>Followers: <label data-bind="text: followers"/></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8" data-bind='component: { name: "repos-widget", params: repos_url }'>
+
+        </div>
+</div>
